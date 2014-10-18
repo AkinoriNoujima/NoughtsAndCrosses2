@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_back" >
+
+    <TextView
+        android:id="@+id/centerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/onePlayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/centerView"
+        android:layout_below="@+id/centerView"
+        android:background="#99ffff"
+        android:text="一人プレイ" />
+
+    <Button
+        android:id="@+id/twoPlayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/centerView"
+        android:layout_below="@+id/centerView"
+        android:background="#99ffff"
+        android:text="二人プレイ" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onePlayBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="プレイモードをタップしてね"
+        android:textColor="#33ff99"
+        android:textSize="30dp" />
+
+</RelativeLayout>

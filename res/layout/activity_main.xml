@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_back"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/winCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="勝った回数"
+        android:textColor="#33ccff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/loseCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="負けた回数"
+        android:textColor="#ff6666"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/turnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="ターンを表示"
+        android:textColor="#66ff66"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/turnText"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/turnText"
+        android:layout_margin="2dp"
+        android:layout_toLeftOf="@+id/btn1"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/turnText"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@+id/btn1"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn1"
+        android:layout_margin="2dp"
+        android:layout_toLeftOf="@+id/btn4"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn1"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@+id/btn4"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn4"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn4"
+        android:layout_margin="2dp"
+        android:layout_toLeftOf="@+id/btn7"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn4"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@+id/btn7"
+        android:background="#cccccc"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="結果を表示"
+        android:textColor="#66ff66"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/retryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultText"
+        android:layout_centerHorizontal="true"
+        android:text="再勝負"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/gameModeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retryBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="ゲームモード"
+        android:textColor="#ff99ff"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="勝敗クリア"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
