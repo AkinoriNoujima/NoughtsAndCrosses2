@@ -38,10 +38,10 @@ public class MainActivity extends Activity implements OnClickListener, GamePlaya
 	private TextView resultText;
 	private TextView winCountText;
 	private TextView loseCountText;
-	int winCount1 = 0;
-	int loseCount1 = 0;
-	int winCount2 = 0;
-	int loseCount2 = 0;
+	private int winCount1 = 0;
+	private int loseCount1 = 0;
+	private int winCount2 = 0;
+	private int loseCount2 = 0;
 	//9マスのボタンと再勝負ボタンと勝敗クリアボタン
 	private Button[] gridBtns;
 	private Button retryBtn;
